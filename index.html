@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Virtual Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md fixed w-full z-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center gap-2">
+                    <span class="bg-indigo-600 text-white p-2 rounded-lg">
+                        <i data-lucide="sparkles" class="w-5 h-5"></i>
+                    </span>
+                    <span class="font-bold text-xl tracking-tight">YourName<span class="text-indigo-600">.VA</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                    <a href="#services" class="hover:text-indigo-600 transition">Services</a>
+                    <a href="#portfolio" class="hover:text-indigo-600 transition">Portfolio</a>
+                    <a href="#contact" class="px-4 py-2 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition">Book a Call</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-indigo-50 text-indigo-600 text-sm font-semibold mb-6 border border-indigo-100">
+                Open for New Clients
+            </span>
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                I handle the chaos so you can <br>
+                <span class="gradient-text">focus on growth.</span>
+            </h1>
+            <p class="text-xl text-slate-500 mb-10 max-w-2xl mx-auto">
+                Reliable, tech-savvy Virtual Assistant helping entrepreneurs reclaim 
+                10+ hours a week through organized admin, inbox management, and creative support.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="px-8 py-4 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200 flex items-center justify-center gap-2">
+                    Let's Chat
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#services" class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-xl font-semibold hover:border-slate-300 transition flex items-center justify-center gap-2">
+                    View Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack (Crucial for Juniors) -->
+    <section class="py-10 bg-white border-y border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-6">My Digital Toolkit</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Replace with SVG Logos if desired, using text for simplicity -->
+                <span class="flex items-center gap-2 font-bold text-xl"><i data-lucide="mail" class="w-6 h-6"></i> Gmail</span>
+                <span class="flex items-center gap-2 font-bold text-xl"><i data-lucide="trello" class="w-6 h-6"></i> Trello</span>
+                <span class="flex items-center gap-2 font-bold text-xl"><i data-lucide="image" class="w-6 h-6"></i> Canva</span>
+                <span class="flex items-center gap-2 font-bold text-xl"><i data-lucide="video" class="w-6 h-6"></i> Zoom</span>
+                <span class="flex items-center gap-2 font-bold text-xl"><i data-lucide="sheet" class="w-6 h-6"></i> Sheets</span>
+                <span class="flex items-center gap-2 font-bold text-xl"><i data-lucide="slack" class="w-6 h-6"></i> Slack</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">How I Can Support You</h2>
+                <p class="text-slate-500">Flexible support tailored to your business needs.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-6">
+                        <i data-lucide="inbox" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">General Admin</h3>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500 mt-1"></i> Inbox Management (Zero Inbox)</li>
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500 mt-1"></i> Calendar Scheduling</li>
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500 mt-1"></i> Data Entry & Research</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-6">
+                        <i data-lucide="instagram" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Social Media Assist</h3>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500 mt-1"></i> Canva Graphic Creation</li>
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500 mt-1"></i> Post Scheduling (Buffer/Meta)</li>
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500 mt-1"></i> Community Engagement</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 mb-6">
+                        <i data-lucide="plane" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Lifestyle Management</h3>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500 mt-1"></i> Travel & Itinerary Planning</li>
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500 mt-1"></i> Appointment Booking</li>
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500 mt-1"></i> Personal Purchases/Gifts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Mock Projects -->
+    <section id="portfolio" class="py-20 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Selected Samples</h2>
+                    <p class="text-slate-500">A glimpse into my organizational style and creativity.</p>
+                </div>
+                <a href="#" class="text-indigo-600 font-medium hover:underline mt-4 md:mt-0">See all projects &toea;</a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition cursor-pointer">
+                    <div class="h-48 bg-purple-50 flex items-center justify-center group-hover:bg-purple-100 transition">
+                        <!-- Placeholder for Image -->
+                        <i data-lucide="layout-grid" class="w-12 h-12 text-purple-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-purple-600 uppercase tracking-wide mb-2">Social Media</div>
+                        <h4 class="text-lg font-bold mb-2">Instagram Grid Layout</h4>
+                        <p class="text-sm text-slate-500">Created a cohesive 9-grid visual identity using Canva for a wellness coach.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition cursor-pointer">
+                    <div class="h-48 bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition">
+                         <!-- Placeholder for Image -->
+                        <i data-lucide="calendar-check" class="w-12 h-12 text-blue-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-blue-600 uppercase tracking-wide mb-2">Admin</div>
+                        <h4 class="text-lg font-bold mb-2">Executive Travel Itinerary</h4>
+                        <p class="text-sm text-slate-500">A detailed PDF itinerary including flights, accommodation, and meeting slots.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition cursor-pointer">
+                    <div class="h-48 bg-green-50 flex items-center justify-center group-hover:bg-green-100 transition">
+                         <!-- Placeholder for Image -->
+                        <i data-lucide="database" class="w-12 h-12 text-green-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-green-600 uppercase tracking-wide mb-2">Research</div>
+                        <h4 class="text-lg font-bold mb-2">Podcast Guest Outreach</h4>
+                        <p class="text-sm text-slate-500">Researched 50 potential guests and created a tracking database in Airtable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-slate-200 border border-slate-100 flex flex-col md:flex-row items-center gap-12">
+            <div class="w-32 h-32 md:w-48 md:h-48 bg-slate-200 rounded-full flex-shrink-0 overflow-hidden">
+                <!-- Replace src with your photo -->
+                <img src="D:\VA portfolio" alt="Profile" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Hi, I'm Zeelshaday Kibru 👋</h2>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    I am a highly organized Junior Virtual Assistant based in [Your Location]. 
+                    While I am new to the freelance world, I bring 2 years of experience in IT Project Coordinator where I honed my attention to detail and communication skills.
+                    <br><br>
+                    I am a quick learner, certified in Virtual Assistant, Digital Marketing, Social Media Managemnt and ready to help you streamline your operations.
+                </p>
+                <div class="flex gap-4">
+                    <div class="flex items-center gap-2 text-sm font-semibold text-slate-700">
+                        <i data-lucide="clock" class="w-4 h-4 text-indigo-600"></i> Fast Turnaround
+                    </div>
+                    <div class="flex items-center gap-2 text-sm font-semibold text-slate-700">
+                        <i data-lucide="shield-check" class="w-4 h-4 text-indigo-600"></i> 100% Reliable
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-4 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6">Ready to get your time back?</h2>
+            <p class="text-slate-500 mb-8">I offer a free 15-minute discovery call to see if we're a good fit.</p>
+            
+            <form class="text-left bg-white p-8 rounded-2xl shadow-sm border border-slate-200" onsubmit="event.preventDefault(); alert('In a real site, this would send an email!');">
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+                        <input type="text" class="w-full p-3 bg-slate-50 rounded-lg border border-slate-200 focus:outline-none focus:border-indigo-500" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                        <input type="email" class="w-full p-3 bg-slate-50 rounded-lg border border-slate-200 focus:outline-none focus:border-indigo-500" placeholder="john@example.com">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-slate-700 mb-1">What do you need help with?</label>
+                    <select class="w-full p-3 bg-slate-50 rounded-lg border border-slate-200 focus:outline-none focus:border-indigo-500">
+                        <option>General Admin</option>
+                        <option>Social Media</option>
+                        <option>Research/Data Entry</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <button class="w-full py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition">
+                    Send Inquiry
+                </button>
+            </form>
+            
+            <p class="mt-8 text-sm text-slate-400">Prefer email? <a href="mailto:zeeiikibru16@gmail.com" class="text-indigo-600 hover:underline">hello@yourname.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 border-t border-slate-200 text-center text-sm text-slate-500">
+        <p>&copy; 2024 Your Name Virtual Services. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
